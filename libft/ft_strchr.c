@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
+/* Note how the if condition is differently carried out than ft_strrchr(). */
 char	*ft_strchr(const char *s, int c)
 {
 	while (*s)
