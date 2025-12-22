@@ -11,10 +11,16 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-/*"The strchr() function locates the first occurrence of c (converted to a
+/* according to its man page: 
+1)The strchr() function locates the first occurrence of c (converted to a
      char) in the string pointed to by s.  The terminating null character is
-     considered to be part of the string; therefore if c is ‘\0’, the functions
-     locate the terminating ‘\0’."--Man strchr()*/
+     considered to be part of the string; therefore, if c is ‘\0’, the functions
+     locate the terminating ‘\0’. 
+The strrchr() function is identical to strchr(), except it locates the LAST
+     occurrence of c.
+2)The functions strchr() and strrchr() return a pointer to the located
+     character */
+/*Here we should find the last occurrence of c.*/
 char	*ft_strrchr(const char *s, int c)
 {
 	char	*ptr;
