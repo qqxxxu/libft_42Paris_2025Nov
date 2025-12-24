@@ -12,6 +12,7 @@
 
 #include "libft.h"
 //This function creates a new string by concatenating "s1" and "s2".
+//It null-terminates the new string.
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	size_t	len_s1;
