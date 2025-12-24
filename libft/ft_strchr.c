@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-/* Note how the if condition is differently carried out than ft_strrchr(). */
+/* This function should find the first occurrence of "c"--different from ft_strrchr(), which is supposed to find the last. */
 char	*ft_strchr(const char *s, int c)
 {
 	while (*s)
