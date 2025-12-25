@@ -13,7 +13,10 @@
 /* CODING NOTES:
 1. one of the "hidden malloc" functions: strdup() is a POSIX function and performs dynamic memory allocation. Therefore, the user
 must remember to free it eventually.
-2. By comparison, strcpy or strncpy copies a string to a pre-allocated memory on either the heap or the stack.
+2. comparison of "copying" functions: 
+1)strcpy(can cause buffer overflow) or strncpy(safer) copies a string to a pre-allocated memory on either the heap or the stack.
+2)strdup() is more flexible but needs careful memory allocation.
+3)memcpy() will only copy the number of bytes as requested, while strcpy stops when encountering a null terminator.
 */
 #include "libft.h"
 
