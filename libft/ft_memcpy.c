@@ -11,7 +11,10 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-//The memcpy function copies maximum n bytes from src to dst
+/* CODING NOTES:
+1. The memcpy function copies maximum n bytes from src to dst
+2. dst and src should be converted because void pointers can't be incremented(void means no type).
+*/
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
