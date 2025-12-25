@@ -10,8 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//save a copy of a string
-//If insufficient memory is available, NULL is returned.
+/* CODING NOTES:
+1. one of the "hidden malloc" functions: strdup() is a POSIX function and performs dynamic memory allocation. Therefore, the user
+must remember to free it eventually.
+2. By comparison, strcpy or strncpy copies a string to a pre-allocated memory on either the heap or the stack.
+*/
 #include "libft.h"
 
 char	*ft_strdup(const char *s1)
